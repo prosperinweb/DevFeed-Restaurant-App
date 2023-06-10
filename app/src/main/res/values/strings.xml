@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DevFeed Restaurant App</string>
+    <string name="restaurant_name">DevFeed</string>
+
+    <string name="starters_card_title">Starters</string>
+    <string name="starters_card_subtitle">
+        Ignite your appetite with our range of delicious starters
+    </string>
+    <string name="starters_image_description">Starters card image</string>
+
+    <string name="mains_card_title">Main Courses</string>
+    <string name="mains_card_subtitle">
+        Our main courses are sure to satisfy your hunger
+    </string>
+    <string name="mains_image_description">main courses section image</string>
+    <string name="dish_image">Dish image</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="desserts_image_description">Dessert card image</string>
+    <string name="desserts_card_title">Desserts</string>
+    <string name="desserts_card_subtitle">Finish off with our mouthwatering desserts</string>
+</resources>
