@@ -1,8 +1,10 @@
 package com.kotlinit.devfeedrestautantapp
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.cardview.widget.CardView
 import com.kotlinit.devfeedrestautantapp.databinding.ActivityMainBinding
 
@@ -26,5 +28,18 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, activity))
             }
         }
+
+        binding.textViewContactEmail.setOnClickListener { view ->
+            val intent = Intent(Intent.ACTION_SENDTO).apply {
+                data = Uri.parse("mailto:devfeed@kotlinit.com")
+            }
+
+            if (intent.resolveActivity(view.context.packageManager) != null) {
+                view.context.startActivity(intent)
+            } else {
+                Toast.makeText(view.context, "No email client found", Toast.LENGTH_SHORT).show()
+            }
+        }
+
     }
 }

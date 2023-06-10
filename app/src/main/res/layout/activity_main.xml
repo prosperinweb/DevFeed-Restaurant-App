@@ -8,8 +8,7 @@
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="24dp"
-        >
+        android:padding="24dp">
 
         <TextView
             android:id="@+id/text_view_restaurant_name"
@@ -21,11 +20,40 @@
             android:textColor="@android:color/white"
             android:textSize="48sp" />
 
+        <TextView
+            android:id="@+id/text_view_restaurant_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_restaurant_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/restaurant_description"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/text_view_contact_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_restaurant_description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:padding="16dp"
+            android:text="@string/restaurant_email"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view_starters"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_view_restaurant_name"
+            android:layout_below="@id/text_view_contact_email"
             android:layout_marginTop="40dp"
             app:cardCornerRadius="8dp">
 
@@ -63,9 +91,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/colorPrimary"
-                        android:gravity="center"
                         android:padding="16dp"
                         android:text="@string/starters_card_subtitle"
+                        android:textAlignment="center"
                         android:textColor="@android:color/white"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -116,9 +144,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/colorPrimary"
-                        android:gravity="center"
                         android:padding="16dp"
                         android:text="@string/mains_card_subtitle"
+                        android:textAlignment="center"
                         android:textColor="@android:color/white"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -169,9 +197,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/colorPrimary"
-                        android:gravity="center"
                         android:padding="16dp"
                         android:text="@string/desserts_card_subtitle"
+                        android:textAlignment="center"
                         android:textColor="@android:color/white"
                         android:textSize="18sp" />
                 </LinearLayout>

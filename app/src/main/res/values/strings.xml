@@ -18,4 +18,6 @@
     <string name="desserts_image_description">Dessert card image</string>
     <string name="desserts_card_title">Desserts</string>
     <string name="desserts_card_subtitle">Finish off with our mouthwatering desserts</string>
+    <string name="restaurant_description">The only restaurant in the world that serves food without any ingredients.</string>
+    <string name="restaurant_email">Say what!? Click To Email Us!</string>
 </resources>
