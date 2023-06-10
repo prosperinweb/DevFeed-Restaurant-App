@@ -13,8 +13,10 @@ In this project, I learnt a lot about the following:
 - Working with **Dependencies** such as the `androidx.cardview:cardview:1.0.0`
 - Using the **ListView** and **ArrayAdapter** to display a list of items
 - Working with **Intents** to navigate from one activity to another
-- Declaring activities in the **AndroidManifest.xml** file
+- Declaring activities in the **AndroidManifest.xml** file and setting the queries intent filter
 - using **view binding** to bind views to the activity which avoids the use of `findViewById()`
+- Using Implicit intents e.g. `Intent.SEND_TO` to send data to other apps and declaring queries in the manifest file
+
 
 ## Technologies Used
 
